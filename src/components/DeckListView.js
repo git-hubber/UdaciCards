@@ -16,6 +16,10 @@ class DeckListView extends Component {
     ready: false,
   };
 
+  static navigationOptions = () => ({
+    title: 'Decks',
+  });
+
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch(startGetDecks())

@@ -16,6 +16,10 @@ class NewDeckView extends Component {
     title: '',
   }
 
+  static navigationOptions = () => ({
+    title: 'New Deck',
+  });
+
   _newDeck = () => {
     const { title }  = this.state;
 

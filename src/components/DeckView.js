@@ -16,6 +16,13 @@ class DeckView extends Component {
     ready: false,
   };
 
+  static navigationOptions = ({ navigation }) => {
+    if (navigation.state.params != undefined)
+      return{
+        title: `${navigation.state.params.deck}`,
+      }
+  };
+
   componentDidMount() {
     const { dispatch, deck } = this.props;
     if (deck) {

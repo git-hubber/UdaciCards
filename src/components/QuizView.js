@@ -22,6 +22,11 @@ class QuizView extends Component {
     shownItem: 'question',
   };
 
+  static navigationOptions = () => ({
+    title: 'Quiz',
+  });
+
+
   componentDidMount() {
     clearLocalNotification().then(setLocalNotification);
   }

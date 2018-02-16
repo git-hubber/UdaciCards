@@ -18,6 +18,10 @@ class NewQuestionView extends Component {
     answer: ''
   };
 
+  static navigationOptions = () => ({
+    title: 'New Card',
+  });
+
   _newQuestion = (another) => {
     const { question, answer }  = this.state;
     const { deck } = this.props;

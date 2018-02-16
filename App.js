@@ -50,15 +50,12 @@ const navigationOptions = {
 const DeckNavigator = StackNavigator({
   DeckView: {
     screen: DeckView,
-    navigationOptions,
   },
   NewQuestionView: {
-    screen: NewQuestionView,
-    navigationOptions,
+    screen: NewQuestionView
   },
   QuizView: {
-    screen: QuizView,
-    navigationOptions,
+    screen: QuizView
   },
 }, {
   headerMode: 'none',
